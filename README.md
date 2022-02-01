@@ -47,6 +47,57 @@ This sections contains tutorials and programming challenges.
 - [Area of a triangle](https://doc.rust-lang.org/book/ch05-02-example-structs.html)
   - After completing the tutorial, try modifying your program to accept triangle dimensions from the user via console input. Don't forget to validate your input and handle any errors.
 
+### Knowledge check
+
+After completing the coding challengs above, see how you do with the knowledge checks below.
+
+__Where would you go if you wanted to find crates you could import into your program?__
+
+<details><summary>show</summary>
+
+```
+https://crates.io
+```
+</details>
+
+__Where in your project would you specify dependencies on other crates, authors, and name of your binary?__
+
+<details><summary>show</summary>
+
+```
+cargo.toml
+```
+</details>
+
+__Which file in your project folder ensures reproducible builds of your project, regardless of the the build environment?__
+
+<details><summary>show</summary>
+
+```
+cargo.lock
+```
+</details>
+
+__(True/False) The `cargo.lock` file should be committed to your git repository?__
+
+<details><summary>show</summary>
+
+```
+True: This file specifies the specific dependency versions of other crates your project depends on. So, to ensure consistent builds, even in an automated environment, this file should be part of your git repository.
+```
+</details>
+
+__What is the command to update your cargo dependencies?__
+
+<details><summary>show</summary>
+
+```
+cargo update
+
+This will result in all the dependencies specified in cargo.toml to get updated to their latest version. There is also an option to tell cargo to update a specific dependency instead of all dependencies. See if you can figure out how to specify that option.
+```
+</details>
+
 ## Resources
 
 Below are a list of resources to help you further your Rust learning journey.
