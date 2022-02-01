@@ -1,6 +1,6 @@
 # A Rust programming introduction in 2 hours
 
-The goal for this repo is to provide a basic introduction to the Rust programming language, tooling, resources, and community in 2 hours. The reader should be able to leverage this knowledge to further develop their Rust programming skills.
+The goal for this repository is to provide a basic introduction to the Rust programming language, tooling, resources, and community in 2 hours. It is our hope that after completing the agenda below, readers will have the foundational knowledge and resources to continue their Rust learning journey.
 
 ## Agenda
 
@@ -12,8 +12,8 @@ The goal for this repo is to provide a basic introduction to the Rust programmin
 ## Setup your development environment
 
 This section will guide you through setting a development environment on [Ubuntu Desktop](#ubuntu-desktop), [Mac](#mac), or [Windows](#windows). If you don't want to setup an environment, there are [alternatives](#alternatives) to get you coding in Rust quickly.
-### Ubuntu Desktop
 
+### Ubuntu Desktop
 
 > These instructions have were tested on Ubuntu Desktop 21.10.
 
@@ -82,9 +82,9 @@ __(True/False) The `cargo.lock` file should be committed to your git repository?
 
 <details><summary>show</summary>
 
-```
-True: This file specifies the specific dependency versions of other crates your project depends on. So, to ensure consistent builds, even in an automated environment, this file should be part of your git repository.
-```
+__True__
+
+This file specifies the specific dependency versions of other crates your project depends on. So, to ensure consistent builds, even in an automated environment, this file should be part of your git repository.
 </details>
 
 __What is the command to update your cargo dependencies?__
@@ -93,9 +93,9 @@ __What is the command to update your cargo dependencies?__
 
 ```
 cargo update
-
-This will result in all the dependencies specified in cargo.toml to get updated to their latest version. There is also an option to tell cargo to update a specific dependency instead of all dependencies. See if you can figure out how to specify that option.
 ```
+
+This will result in all the dependencies specified in `cargo.toml` to get updated to their latest version. There is also an option to tell cargo to update a specific dependency instead of all dependencies. See if you can figure out how to specify that option.
 </details>
 
 ## Resources
@@ -103,5 +103,9 @@ This will result in all the dependencies specified in cargo.toml to get updated 
 Below are a list of resources to help you further your Rust learning journey.
 
 - [Rust Programming Language](https://www.rust-lang.org/)
+  - [The book](https://doc.rust-lang.org/book/)
+  - [Rustlings course](https://github.com/rust-lang/rustlings/)
+  - [Rust by example](https://doc.rust-lang.org/stable/rust-by-example/)
+  - [Rust language reference](https://doc.rust-lang.org/stable/reference/)
 - [Rust Package Registry](https://crates.io/)
 - [Let's Get Rusty Youtube Videos](https://www.youtube.com/c/LetsGetRusty/videos)
