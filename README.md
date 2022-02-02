@@ -10,30 +10,21 @@ The goal for this repository is to provide a basic introduction to the Rust prog
 - [Resources](#resources)
 
 ## Setup your development environment
+_20 minutes_
 
-This section will guide you through setting a development environment on [Ubuntu Desktop](#ubuntu-desktop), [Mac](#mac), or [Windows](#windows). If you don't want to setup an environment, there are [alternatives](#alternatives) to get you coding in Rust quickly.
+This section will guide you through setting up your development environment. Follow the [getting started](https://www.rust-lang.org/learn/get-started) documentation to install Rust, configure your IDE, and build a small sample application.
 
-### Ubuntu Desktop
+> NOTE: The link above will present instructions specific to your operating system.
 
-> These instructions have were tested on Ubuntu Desktop 21.10.
-
-TODO...
-
-### Mac
-
-TODO...
-### Windows
-
-TODO...
-### Alternative
-
-Do you just want to kick the tires in Rust witout setting up an environment? If so, try out the [Rust playground](https://play.rust-lang.org/), where you can experiment with the language online without setting up an environment.
+Make sure you meet Ferris when wrapping up this section! :smile:
 
 ## Introduction to the Rust programming language
+_20 minutes_
 
 TODO...
 
 ## Programming challenges
+_75 minutes_
 
 This sections contains tutorials and programming challenges.
 
@@ -48,6 +39,7 @@ This sections contains tutorials and programming challenges.
   - After completing the tutorial, try modifying your program to accept triangle dimensions from the user via console input. Don't forget to validate your input and handle any errors.
 
 ### Knowledge check
+_5 minutes_
 
 After completing the coding challengs above, see how you do with the knowledge checks below.
 
@@ -65,7 +57,7 @@ __Where in your project would you specify dependencies on other crates, authors,
 <details><summary>show</summary>
 
 ```
-cargo.toml
+Cargo.toml
 ```
 </details>
 
@@ -74,17 +66,21 @@ __Which file in your project folder ensures reproducible builds of your project,
 <details><summary>show</summary>
 
 ```
-cargo.lock
+Cargo.lock
 ```
 </details>
 
-__(True/False) The `cargo.lock` file should be committed to your git repository?__
+__(True/False) The `Cargo.lock` file should be checked into your git repository?__
 
 <details><summary>show</summary>
 
-__True__
+__It depends!__
 
-This file specifies the specific dependency versions of other crates your project depends on. So, to ensure consistent builds, even in an automated environment, this file should be part of your git repository.
+If you’re building a non-end product, such as a rust **library** that other rust packages will depend on, put `Cargo.lock` in your `.gitignore`. So, _False_ in this case.
+
+If you’re building an end product, which are executable like command-line tool or an **application**, or a system library with crate-type of staticlib or cdylib, check `Cargo.lock` into git.  So, _True_ in this case.
+
+More background on this is available [here](https://doc.rust-lang.org/cargo/faq.html#why-do-binaries-have-cargolock-in-version-control-but-not-libraries).
 </details>
 
 __What is the command to update your cargo dependencies?__
@@ -95,7 +91,7 @@ __What is the command to update your cargo dependencies?__
 cargo update
 ```
 
-This will result in all the dependencies specified in `cargo.toml` to get updated to their latest version. There is also an option to tell cargo to update a specific dependency instead of all dependencies. See if you can figure out how to specify that option.
+This will result in all the dependencies specified in `Cargo.toml` to get updated to their latest version. There is also an option to tell cargo to update a specific dependency instead of all dependencies. See if you can figure out how to specify that option.
 </details>
 
 ## Resources
@@ -108,4 +104,6 @@ Below are a list of resources to help you further your Rust learning journey.
   - [Rust by example](https://doc.rust-lang.org/stable/rust-by-example/)
   - [Rust language reference](https://doc.rust-lang.org/stable/reference/)
 - [Rust Package Registry](https://crates.io/)
+- [Rust playground](https://play.rust-lang.org/)
+- [Learning Rust](https://learning-rust.github.io/)
 - [Let's Get Rusty Youtube Videos](https://www.youtube.com/c/LetsGetRusty/videos)
