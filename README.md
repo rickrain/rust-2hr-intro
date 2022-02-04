@@ -18,10 +18,19 @@ This section will guide you through setting up your development environment. Fol
 
 Make sure you meet Ferris when wrapping up this section! :smile:
 
+> RECOMMENDED: For VSCode, use the following extensions:
+
+- [Rust Extension Pack](https://marketplace.visualstudio.com/items?itemName=swellaby.rust-pack)
+- [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=matklad.rust-analyzer)
+
 ## Introduction to the Rust programming language
 _20 minutes_
 
-TODO...
+This section will walk you through Rust's most [common programming concepts](https://doc.rust-lang.org/book/ch03-01-variables-and-mutability.html), including [variables, mutability](https://doc.rust-lang.org/book/ch03-01-variables-and-mutability.html), [data types](https://doc.rust-lang.org/book/ch03-02-data-types.html), [functions](https://doc.rust-lang.org/book/ch03-03-how-functions-work.html), [comments](https://doc.rust-lang.org/book/ch03-04-comments.html) and [control flow](https://doc.rust-lang.org/book/ch03-05-control-flow.html).  
+
+Once chapter 3 is completed, we move onto Rust's concept of [ownership](https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html), [refences and borrowing](https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html).
+
+Even though we could keep going for a very long time, we will only focus on [Storing Lists of Values with Vectors](https://doc.rust-lang.org/book/ch08-01-vectors.html)
 
 ## Programming challenges
 _75 minutes_
