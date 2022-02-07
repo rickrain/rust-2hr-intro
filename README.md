@@ -16,21 +16,22 @@ This section will guide you through setting up your development environment. Fol
 
 > NOTE: The link above will present instructions specific to your operating system.
 
-Make sure you meet Ferris when wrapping up this section! :smile:
-
 > RECOMMENDED: For VSCode, use the following extensions:
 
-- [Rust Extension Pack](https://marketplace.visualstudio.com/items?itemName=swellaby.rust-pack)
 - [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=matklad.rust-analyzer)
+- [Rust Extension Pack](https://marketplace.visualstudio.com/items?itemName=swellaby.rust-pack)
+
+Make sure you meet Ferris when wrapping up this section! :smile:
+
 
 ## Introduction to the Rust programming language
 _20 minutes_
 
 This section will walk you through Rust's most [common programming concepts](https://doc.rust-lang.org/book/ch03-01-variables-and-mutability.html), including [variables, mutability](https://doc.rust-lang.org/book/ch03-01-variables-and-mutability.html), [data types](https://doc.rust-lang.org/book/ch03-02-data-types.html), [functions](https://doc.rust-lang.org/book/ch03-03-how-functions-work.html), [comments](https://doc.rust-lang.org/book/ch03-04-comments.html) and [control flow](https://doc.rust-lang.org/book/ch03-05-control-flow.html).  
 
-Once chapter 3 is completed, we move onto Rust's concept of [ownership](https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html), [refences and borrowing](https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html).
+After completing chapter 3, review Rust's concept of [ownership](https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html), [refences and borrowing](https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html).
 
-Even though we could keep going for a very long time, we will only focus on [Storing Lists of Values with Vectors](https://doc.rust-lang.org/book/ch08-01-vectors.html)
+As preparation for the following programming challenges, spend a few minutes reviewing how to [store lists of values with vectors](https://doc.rust-lang.org/book/ch08-01-vectors.html)
 
 ## Programming challenges
 _75 minutes_
@@ -39,10 +40,11 @@ This sections contains tutorials and programming challenges.
 
 - [Guessing game](https://doc.rust-lang.org/book/ch02-00-guessing-game-tutorial.html)
   - After completing the tutorial, try adding the following features to your application:
-    - If the user guesses incorrectly, inform the user of their missed guess using a _red_ font. Also, consider sounding an abnoxious horn if the user guesses incorrectly.
-    - If the user guesses correctly, inform the user of their success using a _green_ font. Also, consider sounding a pleasant bell chime if the user guess correctly.
+    - If the user guesses incorrectly, inform the user of their missed guess using a _red_ font.
+    - If the user guesses correctly, inform the user of their success using a _green_ font.
     - Clear the terminal when the program starts so the user has a clean terminal to start from.
     - If the user guesses the same number twice, tell them to stop repeating themselves.
+    - Add scoring to keep track of the number of attempts it takes the user to guess the number.
 
 - [Area of a triangle](https://doc.rust-lang.org/book/ch05-02-example-structs.html)
   - After completing the tutorial, try modifying your program to accept triangle dimensions from the user via console input. Don't forget to validate your input and handle any errors.
