@@ -7,7 +7,7 @@ fn main() {
     print!("{esc}c", esc = 27 as char); // Clear the terminal
 
     // Generate a random number between 1..100
-    let secret_number = rand::thread_rng().gen_range(1..101);
+    let secret_number = rand::rng().random_range(1..101);
     println!("I have a secret number selected between 1 and 100.");
     println!("How quickly can you guess the number?");
 
