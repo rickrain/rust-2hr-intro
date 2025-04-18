@@ -20,20 +20,16 @@ impl Rectangle {
     fn can_hold(&self, other: &Rectangle) -> bool {
         self.width > other.width && self.height > other.height
     }
-
 }
 
 // Rust allows multiple impl blocks
 impl Rectangle {
-
-    // 
     fn square(size: u32) -> Rectangle {
         Rectangle {
             width: size,
             height: size,
         }
     }
-
 }
 
 fn main() {
@@ -60,16 +56,12 @@ fn main() {
         "The area of the rectangle is {} square pixels.",
         rect1.area()
     );
-    println!(
-        "The area of the square is {} square pixels.",
-        sq.area()
-    );
+    println!("The area of the square is {} square pixels.", sq.area());
 
-    // Debugging via Println
+    // Debugging via println!
     //println!("rect1 is {:?}", rect1);
     dbg!(&rect1);
 
     println!("Can rect1 hold rect2? {}", rect1.can_hold(&rect2));
     println!("Can rect1 hold rect3? {}", rect1.can_hold(&rect3));
-
 }
