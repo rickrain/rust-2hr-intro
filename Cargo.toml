@@ -1,0 +1,6 @@
+[workspace]
+members = [
+    "code-challenge-solutions/guessing-game",
+    "code-challenge-solutions/rectangles",
+]
+resolver = "3"

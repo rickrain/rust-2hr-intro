@@ -1,3 +1,5 @@
+[![Rust](https://github.com/rickrain/rust-2hr-intro/actions/workflows/ci.yml/badge.svg)](https://github.com/rickrain/rust-2hr-intro/actions/workflows/ci.yml)
+
 # A Rust programming introduction in 2 hours
 
 The goal for this repository is to provide a basic introduction to the Rust programming language, tooling, resources, and community in 2 hours. It is our hope that after completing the agenda below, readers will have the foundational knowledge and resources to continue their Rust learning journey.
